@@ -21,8 +21,6 @@ contract CheetahGang is ERC721A, Ownable, ERC721ABurnable {
     address public Treasury;
     IERC20 public CHEETAH;
     string private _baseURIextended;
-   
-
     constructor(address _cheetah, address _treasury) ERC721A('CheetahDAO', 'CGDT') {
         CHEETAH = IERC20(_cheetah);
         Treasury = _treasury;
